@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:kodmyui/Screens/Articles.dart';
+import 'package:kodmyui/Screens/FeaturedScreen.dart';
 import 'package:kodmyui/models/demo_data.dart';
 
 class ArticleDetails extends StatefulWidget {
@@ -56,12 +56,21 @@ class _ArticleDetailsState extends State<ArticleDetails> {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: <Widget>[
+                                // Row(
+                                //   crossAxisAlignment: CrossAxisAlignment.start,
+                                //   children: <Widget>[
+                                //     IconButton(icon: Icon(Icons.arrow_back_ios, color: Colors.white),
+                                //         onPressed: (){
+                                //           Navigator.push(context, MaterialPageRoute(builder: (context)=> Articles()));
+                                //         }),
+                                //   ],
+                                // ),
                                 Row(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: <Widget>[
                                     IconButton(icon: Icon(Icons.arrow_back_ios, color: Colors.white),
                                         onPressed: (){
-                                          Navigator.push(context, MaterialPageRoute(builder: (context)=> Articles()));
+                                          Navigator.push(context, MaterialPageRoute(builder: (context)=> HomeScreen()));
                                         }),
                                   ],
                                 ),
